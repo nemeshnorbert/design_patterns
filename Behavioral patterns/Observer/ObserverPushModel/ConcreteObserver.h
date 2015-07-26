@@ -1,0 +1,23 @@
+#ifndef OBSERVER_PUSH_MODEL_CONCRETE_OBSERVER_H_
+#define OBSERVER_PUSH_MODEL_CONCRETE_OBSERVER_H_
+
+#include <string>
+
+#include "ConcreteSubject.h"
+#include "Observer.h"
+
+class ConcreteObserver : public Observer
+{
+public:
+    ConcreteObserver(const std::string& name, std::shared_ptr<ConcreteSubject> subject);
+
+    virtual void Update(const State& state) override;
+
+    virtual ~ConcreteObserver();
+
+private:
+    std::weak_ptr<ConcreteSubject> subject_;
+    State observerState_;
+};
+
+#endif
