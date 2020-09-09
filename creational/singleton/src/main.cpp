@@ -1,13 +1,8 @@
-// Singleton.cpp : Defines the entry point for the console application.
-//
+#include "singleton.h"
 
-#include "stdafx.h"
-
-#include "Singleton.h"
-
-int _tmain(int argc, _TCHAR* argv[])
+int main(int argc, char** argv)
 {
     Singleton::Instance().Action();
-	return 0;
+    return 0;
 }
 

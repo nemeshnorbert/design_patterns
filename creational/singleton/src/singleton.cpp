@@ -1,8 +1,6 @@
-#include "stdafx.h"
-
 #include <iostream>
 
-#include "Singleton.h"
+#include "singleton.h"
 
 void Singleton::Action()
 {
