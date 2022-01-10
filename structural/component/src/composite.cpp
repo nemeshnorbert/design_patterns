@@ -33,6 +33,13 @@ void Composite::Remove(const std::string& id)
 
 void Composite::Add(std::shared_ptr<Component> component)
 {
+    auto it = nodes_.find(component->Id());
+    if (it != nodes_.end())
+    {
+        auto message = std::string{"component with id "}
+            + component->Id() + std::string{"already exists"};
+        throw std::runtime_error(message);
+    }
     nodes_[component->Id()] = component;
 }
 
