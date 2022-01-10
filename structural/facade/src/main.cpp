@@ -2,7 +2,7 @@
 
 int main(int argc, char** argv)
 {
-    Facade facade;
+    auto facade = Facade{};
     facade.MethodAC();
     facade.MethodBD();
     return 0;
