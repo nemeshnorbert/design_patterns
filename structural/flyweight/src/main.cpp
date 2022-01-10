@@ -13,10 +13,10 @@ int main()
 
     externalState = 5;
 
-    auto flyweightThree = factory->GetFlyweightA("P");
+    auto flyweightThree = factory->GetFlyweightB("P");
     flyweightThree->Operation(externalState);
 
-    auto flyweightFour = factory->GetFlyweightA("Q");
+    auto flyweightFour = factory->GetFlyweightB("Q");
     flyweightFour->Operation(externalState);
 
     return 0;

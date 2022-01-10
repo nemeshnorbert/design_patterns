@@ -6,7 +6,7 @@ State::State()
 }
 
 State::State(int data)
-    : data_(data)
+    : data_{data}
 {}
 
 int State::GetData() const
