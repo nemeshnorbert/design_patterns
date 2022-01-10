@@ -21,10 +21,11 @@ std::shared_ptr<AbstractPrototypeX> PrototypeFactory::CreatePrototypeX(int param
     return cloneX;
 }
 
-PrototypeFactory::PrototypeFactory(std::shared_ptr<AbstractPrototypeX> prototypeX,
+PrototypeFactory::PrototypeFactory(
+    std::shared_ptr<AbstractPrototypeX> prototypeX,
     std::shared_ptr<AbstractPrototypeY> prototypeY)
-    : prototypeX_(prototypeX)
-, prototypeY_(prototypeY)
+    : prototypeX_{prototypeX}
+    , prototypeY_{prototypeY}
 {
 
 }

@@ -9,7 +9,7 @@ void Component::ProcessPrototypes(int paramX1, int paramY1, int paramY2)
 }
 
 Component::Component(std::shared_ptr<AbstractPrototypeFactory> customFactory)
-    : factory_(customFactory)
+    : factory_{customFactory}
 {
 
 }
