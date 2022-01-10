@@ -10,8 +10,6 @@ class AbstractCreator
 public:
     virtual std::shared_ptr<AbstractProduct> CreateProduct() = 0;
 
-    virtual void Action();
-
     virtual ~AbstractCreator();
 };
 
