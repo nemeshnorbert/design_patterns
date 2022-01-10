@@ -1,18 +1,24 @@
+#include <memory>
+
+#include "implementation_a.h"
+#include "implementation_b.h"
 #include "refined_abstraction_a.h"
 #include "refined_abstraction_b.h"
+#include "client.h"
 
 
 int main(int argc, char** argv)
 {
-    auto implementationA = std::make_shared<ImplementationA>();
-    auto implementationB = std::make_shared<ImplementationB>();
+    auto clientA = Client(
+        std::make_shared<RefinedAbstractionA>(
+            std::make_shared<ImplementationA>()));
+    clientA.Action();
 
-    auto abstractionA = std::make_shared<RefinedAbstractionA>(implementationA);
-    abstractionA->Operation();
+    auto clientB = Client(
+        std::make_shared<RefinedAbstractionA>(
+            std::make_shared<ImplementationA>()));
+    clientB.Action();
 
-    auto abstractionB = std::make_shared<RefinedAbstractionB>(implementationB);
-    abstractionB->Operation();
-
-	return 0;
+    return 0;
 }
 

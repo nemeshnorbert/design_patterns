@@ -13,7 +13,8 @@ void RefinedAbstractionA::Operation()
     Abstraction::Operation();
 }
 
-RefinedAbstractionA::RefinedAbstractionA(std::shared_ptr<ImplementationA> implementationA) : Abstraction(implementationA)
+RefinedAbstractionA::RefinedAbstractionA(std::shared_ptr<ImplementationA> implementationA)
+    : Abstraction{implementationA}
 {
 
 }
