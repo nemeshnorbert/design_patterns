@@ -9,7 +9,8 @@ std::shared_ptr<Product> Director::GetProduct()
     return builder_->GetProduct();
 }
 
-Director::Director(std::shared_ptr<AbstractBuilder> builder) : builder_(builder)
+Director::Director(std::shared_ptr<AbstractBuilder> builder)
+    : builder_{builder}
 {
 
 }

@@ -27,7 +27,8 @@ void BuilderB::BuildPartX()
     std::cout << "BuilderB::BuildPartX\n";
 }
 
-BuilderB::BuilderB() : product_(std::make_shared<Product>())
+BuilderB::BuilderB()
+    : product_{std::make_shared<Product>()}
 {
 
 }

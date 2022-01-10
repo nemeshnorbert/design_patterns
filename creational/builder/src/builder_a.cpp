@@ -14,20 +14,21 @@ std::shared_ptr<Product> BuilderA::GetProduct()
 
 void BuilderA::BuildPartZ()
 {
-    std::cout << "BuilderA::BuildPartZ\n";
+    std::cout << "BuilderA::BuildPartZ()\n";
 }
 
 void BuilderA::BuildPartY()
 {
-    std::cout << "BuilderA::BuildPartY\n";
+    std::cout << "BuilderA::BuildPartY()\n";
 }
 
 void BuilderA::BuildPartX()
 {
-    std::cout << "BuilderA::BuildPartX\n";
+    std::cout << "BuilderA::BuildPartX()\n";
 }
 
-BuilderA::BuilderA() : product_(std::make_shared<Product>())
+BuilderA::BuilderA()
+    : product_{std::make_shared<Product>()}
 {
 
 }

@@ -7,8 +7,8 @@
 
 int main(int argc, char** argv)
 {
-    Director foreman(std::make_shared<BuilderA>());
+    auto foreman = Director{std::make_shared<BuilderA>()};
     auto product = foreman.GetProduct();
-	return 0;
+    return 0;
 }
 
