@@ -15,6 +15,6 @@ void Proxy::Operation()
     {
         implementor_ = std::make_shared<Implementor>();
     }
+    std::cout << "Proxy::Operation()\n\t";
     implementor_->Operation();
-    std::cout << "from Proxy";
 }
