@@ -6,8 +6,10 @@ class Singleton
 private:
     Singleton();
 
-    Singleton(const Singleton&);
-    Singleton& operator = (const Singleton&);
+    Singleton(const Singleton&) = delete;
+    Singleton(Singleton&&) = delete;
+    Singleton& operator = (const Singleton&) = delete;
+    Singleton& operator = (Singleton&&) = delete;
 
 public:
     static Singleton& Instance();

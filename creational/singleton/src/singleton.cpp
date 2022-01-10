@@ -9,7 +9,7 @@ void Singleton::Action()
 
 Singleton& Singleton::Instance()
 {
-    static Singleton instance;
+    static Singleton instance{};
     return instance;
 }
 
