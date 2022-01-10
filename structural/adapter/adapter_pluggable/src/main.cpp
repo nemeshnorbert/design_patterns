@@ -3,8 +3,8 @@
 
 int main()
 {
-    PluggableAdapter adapter(std::make_shared<AdapteeB>());
+    auto adapter = PluggableAdapter{std::make_shared<AdapteeB>()};
     adapter.Action(1);
-	return 0;
+    return 0;
 }
 

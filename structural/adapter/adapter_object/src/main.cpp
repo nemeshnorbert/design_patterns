@@ -2,7 +2,7 @@
 
 int main(int argc, char** argv)
 {
-    Client client;
+    auto client = Client{};
     client.Method();
     return 0;
 }
