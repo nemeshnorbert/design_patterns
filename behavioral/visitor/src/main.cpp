@@ -21,6 +21,6 @@ int main(int argc, char** argv)
     objects->Accept(visitorX.get());
     objects->Accept(visitorY.get());
 
-	return 0;
+    return 0;
 }
 
