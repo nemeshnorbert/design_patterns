@@ -16,6 +16,6 @@ int main(int argc, char** argv)
 
     subject->Notify();
 
-	return 0;
+    return 0;
 }
 
