@@ -3,12 +3,12 @@
 
 int main(int argc, char** argv)
 {
-    Originator originator(3);
-    Caretaker caretaker;
+    auto originator = Originator{3};
+    auto caretaker = Caretaker{};
     caretaker.SetMemento(originator.CreateMemento());
 
     originator.AcquireMemento(caretaker.GetMemento());
 
-	return 0;
+    return 0;
 }
 
