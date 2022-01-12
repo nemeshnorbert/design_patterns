@@ -13,6 +13,6 @@ int main(int argc, char** argv)
     colleagueA->Send(Message("Hi this is colleague A"));
     colleagueB->Send(Message("Hi this is colleague B"));
 
-	return 0;
+    return 0;
 }
 
