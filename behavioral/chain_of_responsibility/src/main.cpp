@@ -11,6 +11,6 @@ int main()
     handlerA->HandleRequest(Request::A);
     handlerA->HandleRequest(Request::B);
 
-	return 0;
+    return 0;
 }
 
